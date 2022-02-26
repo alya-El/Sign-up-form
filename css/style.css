@@ -1,0 +1,136 @@
+body, .main{
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-flex;
+}
+.background-image{
+    max-width: 100%;
+    max-height: 100vh;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    margin-left: 170px;
+    width: 200px;
+}
+.motto{
+    position: absolute;
+    top: 150px;
+    margin-left: 150px;
+    font-size: medium;
+    color: #fff2e6;
+}
+.title{
+    font-size: 25px;
+}
+.content{
+    display: flex;
+    flex-direction:column;
+    background-color: #f3ebed;
+    border-radius: 12px 0 0 12px;
+    margin-left: -10px;
+    width: 100vw;
+}
+.form{
+    width: 410px;
+    margin: 0px auto;
+    padding: 0px 50px;
+}
+.sign-in{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    margin: 30px;
+}
+.sign-up{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.input-box input{
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 8px;
+    padding-left: 15px;
+}
+.input-box input:hover{
+    border: 1px solid grey;
+    box-shadow: 0 0 5px 2px pink; 
+}
+.input-box label{
+    font-weight: bold;
+}
+.name, .username{
+    width: 48%;
+}
+.submit{
+    height: 45px;
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 80px;
+    align-self: center;
+    border-radius: 5px;
+    background-color: #ff66b3;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.privacy{
+    display: flex;
+    align-items: flex-start;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 10px;
+}
+.privacy > label{
+    margin-left: 10px;
+}
+input[type=checkbox] {
+    width: 25px; 
+    height: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:active, a:hover{
+    color: #bf80ff;
+}
+@media only screen and (max-width: 1025px) {
+    .background-image, .motto{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .content{
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    .logo-black{
+        position: absolute;
+        top: -30px;
+        margin-left: -20px;
+        width: 150px;
+    }
+    .sign-in{
+        order: 4;
+        text-align: center;
+    }
+    .form{
+        padding-top: 80px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .logo-black{
+        display: none;
+    }
+}

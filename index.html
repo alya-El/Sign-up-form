@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0,width=device-width">
+    <title>Sign-up</title>
+
+    <!-- Nicolas Gallagher
+          Normalize.css
+          Downloaded from:
+          https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css
+          On 24 Feb 2022
+    -->
+  	<link rel="stylesheet" type="text/css" href="./css/nomalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!-- Google Fonts
+         Downloaded from:
+         https://fonts.google.com
+         On 24 Feb 2022
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main">
+        <!-- Lisa van Vliet
+         Downloaded from:
+         https://unsplash.com/photos/XCtRvrvLhf4
+         On 24 Feb 2022
+        -->
+        <img src="./imgs/background-img.jpg" alt="beach wallpaper" class="background-image">
+        <img src="./imgs/Seemify-logos_transparent.png" alt="company logo" class="logo">
+        <h1 class="motto">Discover the world's top Artists.</h1>
+
+        <div class="content">
+            <h2 class="sign-in">Already a member? <a href="" id="signin_link">Sign In</a></h2>
+            <div class="form">
+                <img src="./imgs/Seemify-logos_black.png" alt="company logo" class="logo-black">
+                <h3 class="title">Sign up to Seemify</h3>
+                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! <br> <br>Sign up <em><b>now</b></em> to get started.</p>
+
+                <form class="sign-up">
+                    <div class="name input-box">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="username input-box">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="email input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="password input-box">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="6+ characters" minlength="6" required>
+                    </div>
+
+                    <div class="privacy">
+                        <input type="checkbox" required>
+                        <label for="checkmark">Creating an account means you’re okay with our <a href="" id="privacy_link">Terms of Service and Privacy Policy</a>.</label>
+                    </div>
+
+                    <button class="submit">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
