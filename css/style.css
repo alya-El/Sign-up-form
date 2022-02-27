@@ -1,35 +1,38 @@
-body, .main{
+.main{
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: inline-flex;
 }
-.background-image{
-    max-width: 100%;
-    max-height: 100vh;
+
+/*Left side*/
+.image-seemify{
+    background-image: url("../imgs/background-img.jpg");
+    width: 650px;
+    background-size: cover;  
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 .logo{
     position: absolute;
-    top: 0;
-    margin-left: 170px;
+    margin-left: 190px;
     width: 200px;
 }
 .motto{
     position: absolute;
     top: 150px;
-    margin-left: 150px;
+    margin-left: 170px;
     font-size: medium;
     color: #fff2e6;
 }
-.title{
-    font-size: 25px;
-}
+
+/*Right side*/
 .content{
-    display: flex;
-    flex-direction:column;
     background-color: #f3ebed;
+    width: calc(100vw - 550px);
     border-radius: 12px 0 0 12px;
-    margin-left: -10px;
-    width: 100vw;
+    margin-left: -100px;
+    height: 100vh;
+    overflow: scroll;
 }
 .form{
     width: 410px;
@@ -83,15 +86,19 @@ body, .main{
     color: white;
     font-size: 15px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
-.privacy{
+.submit:hover{
+    background-color: #fa8cc3;
+}
+.privacy-terms{
     display: flex;
     align-items: flex-start;
     font-size: 12px;
     line-height: 15px;
     margin-top: 10px;
 }
-.privacy > label{
+.privacy-terms > label{
     margin-left: 10px;
 }
 input[type=checkbox] {
@@ -104,29 +111,47 @@ a{
 a:active, a:hover{
     color: #bf80ff;
 }
+
+/*Phone and Tablet screens*/
 @media only screen and (max-width: 1025px) {
-    .background-image, .motto{
+    .image-seemify{
         display: none;
-    }
-    .logo{
-        display: none;
-    }
-    .content{
-        margin: 0;
-        padding-bottom: 20px;
     }
     .logo-black{
         position: absolute;
         top: -30px;
         margin-left: -20px;
         width: 150px;
+        padding-top: 60px;
     }
-    .sign-in{
-        order: 4;
-        text-align: center;
+    .content{
+        margin-left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding-bottom: 30px;
     }
     .form{
-        padding-top: 80px;
+        padding-top: 40px;
+    }
+    .sign-in{
+        text-align:center;
+        padding-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 530px) {
+    .form{
+        width: 250px;
+    }
+    .submit{
+        margin: 50px 0;
+    }
+    .content{
+        padding-bottom: 40px;
+        width: 100vw;
+        height: 100%;
+    }
+    .name, .username{
+        width: 100%;
     }
 }
 @media only screen and (min-width: 1024px) {
