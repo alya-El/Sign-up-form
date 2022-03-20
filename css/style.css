@@ -118,20 +118,17 @@ a:active, a:hover{
         display: none;
     }
     .logo-black{
-        position: absolute;
-        top: -30px;
         margin-left: -20px;
         width: 150px;
-        padding-top: 60px;
+    }
+    .form{
+        margin-top: -70px;
     }
     .content{
         margin-left: 0;
         width: 100vw;
         height: 100vh;
         padding-bottom: 30px;
-    }
-    .form{
-        padding-top: 40px;
     }
     .sign-in{
         text-align:center;
